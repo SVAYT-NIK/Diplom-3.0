@@ -1,0 +1,64 @@
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+env/
+ENV/
+.venv/
+.env/
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Database
+*.db
+*.db-journal
+
+# Logs
+logs/
+*.log
+
+# Models
+*.joblib
+*.pkl
+*.model
+
+# Excel files
+*.xlsx
+*.xls
+*.csv
+
+# Environment
+.env
+.env.local
+.env.*
+```
