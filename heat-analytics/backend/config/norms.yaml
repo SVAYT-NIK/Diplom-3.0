@@ -1,0 +1,45 @@
+# Нормативы теплопотребления для различных типов зданий
+# Значения в Гкал/м² за отопительный период
+
+buildings:
+  # Типы зданий по году постройки
+  old:
+    year_range: [0, 1990]
+    norm_gcal_m2: 0.035
+    description: "Здания до 1990 года"
+  
+  mid:
+    year_range: [1991, 2000]
+    norm_gcal_m2: 0.028
+    description: "Здания 1991-2000 годов"
+  
+  new:
+    year_range: [2001, 2015]
+    norm_gcal_m2: 0.022
+    description: "Здания 2001-2015 годов"
+  
+  modern:
+    year_range: [2016, 2030]
+    norm_gcal_m2: 0.018
+    description: "Современные здания с энергоэффективностью"
+
+# Типы систем отопления
+heating_types:
+  elevator:
+    norm_multiplier: 1.0
+    description: "Элеваторная система"
+  
+  pump:
+    norm_multiplier: 0.95
+    description: "Насосная система"
+  
+  individual:
+    norm_multiplier: 0.85
+    description: "Индивидуальный тепловой пункт"
+
+# Климатические зоны (ГСОП - градусо-сутки отопительного периода)
+climate_zones:
+  abakan:
+    hdd: 4500
+    temp_zone: "-40°C"
+    description: "Республика Хакасия, г. Абакан"
