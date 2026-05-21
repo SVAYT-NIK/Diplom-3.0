@@ -1,0 +1,31 @@
+{
+  "anomaly_thresholds": {
+    "ewma_span": 14,
+    "std_multiplier": 3.0,
+    "isolation_forest_contamination": 0.1,
+    "lof_n_neighbors": 20
+  },
+  "regression_params": {
+    "ols_alpha": 0.05,
+    "huber_epsilon": 1.35,
+    "ridge_alphas": [0.1, 1.0, 10.0],
+    "lasso_alphas": [0.001, 0.01, 0.1],
+    "quantile_q": [0.25, 0.5, 0.75]
+  },
+  "clustering_params": {
+    "kmeans_init": "k-means++",
+    "kmeans_n_init": 10,
+    "kmeans_max_iter": 300,
+    "dbscan_eps": 0.5,
+    "dbscan_min_samples": 5,
+    "gmm_n_components": 4,
+    "gmm_covariance_type": "full"
+  },
+  "efficiency_classes": {
+    "A": {"min": -100, "max": -15},
+    "B": {"min": -15, "max": -5},
+    "C": {"min": -5, "max": 5},
+    "D": {"min": 5, "max": 15},
+    "E": {"min": 15, "max": 100}
+  }
+}
